@@ -51,7 +51,9 @@ const Workexperience = mongoose.model("Workexperience", workSchema);
 
 
 // Routes
-app.get("/api", async (req, res) => {
+
+// GET-anrop
+app.get("/", async (req, res) => {
 
     res.json({message: "Välkommen till mitt API för moment 3 i kursen DT207G"});
 });
@@ -73,7 +75,7 @@ app.get("/workexperiences", async (req, res) => {
     }
 });
 
-// POST-anrop
+// POST-anrop, lägg till arbetserfarenhet i workexperiences-tabell
 app.post("/workexperiences", async (req, res) => {
     try {
         let newJob = await Workexperience.create(req.body);
@@ -86,7 +88,7 @@ app.post("/workexperiences", async (req, res) => {
     }
 });
 
-// PUT-anrop med id
+// PUT-anrop med id, uppdatera arbetserfarenhet i workexperiences-tabell
 app.put("/workexperiences/:id", async (req, res) => {
 
     // Hämta id och uppdatera
@@ -105,7 +107,7 @@ app.put("/workexperiences/:id", async (req, res) => {
     }
 });
 
-// DELETE-anrop
+// DELETE-anrop med id, ta bort arbetserfarenhet i workexperiences-tabell
 app.delete("/workexperiences/:id", async (req, res) => {
     try {
         const id = req.params.id;
