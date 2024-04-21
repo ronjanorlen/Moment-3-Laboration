@@ -25,10 +25,10 @@ Nedan finns beskrivet hur man använder API:et på olika sätt.
 | Metod | Ändpunkt  | Beskrivning 
 |--|--|--|
 | GET | api/workexperiences| Hämtar alla arbetserfarenheter
-|GET|api/workexperiences{ID}|Hämtar arbetserfarenheter utifrån specifikt ID|
+|GET|api/workexperiences/:id|Hämtar arbetserfarenheter utifrån specifikt ID|
 |POST|api/workexperiences|Lägger till och lagrar nya poster|
-|PUT|api/workexperiences{ID}|Ändrar arbetserfarenheter utifrån ID|
-|DELETE|api/workexperiences{ID}|Raderar poster utifrån ID|
+|PUT|api/workexperiences/:id|Ändrar arbetserfarenheter utifrån ID|
+|DELETE|api/workexperiences/:id|Raderar poster utifrån ID|
     
     {
 
