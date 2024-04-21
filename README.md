@@ -39,7 +39,6 @@ Nedan finns beskrivet hur man använder API:et på olika sätt.
     "startdate": "2024-01-13T00:00:00.000Z",
     "enddate": "2024-01-22T00:00:00.000Z",
     "description": "Såg till att anrop via ThunderClient fungerade som de ska och att data i Compass och Atlas uppdateras därefter"
-    
   }
         
 
